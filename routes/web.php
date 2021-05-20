@@ -28,7 +28,5 @@ Route::get('/partida/edit/{id}', [PartidaController::class, 'edit'])->middleware
 Route::put('/partida/update/{id}', [PartidaController::class, 'update'])->middleware('auth');
 Route::delete('/partida/{id}', [PartidaController::class, 'destroy'])->middleware('auth');
 
-Route::get('/perfil', [PartidaController::class, 'perfil']);
-
 Route::post('partida/join/{id}', [PartidaController::class, 'join'])->middleware('auth');
 Route::delete('partida/leave/{id}', [PartidaController::class, 'leave'])->middleware('auth');
