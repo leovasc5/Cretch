@@ -35,10 +35,6 @@ class PartidaController extends Controller
         return view('criar-partida');
     }
 
-    public function perfil(){
-        return view('perfil');
-    }
-
     public function store(Request $request){
         $partida = new Partidas;
 
